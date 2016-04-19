@@ -16,7 +16,7 @@ public class Sonnet29 implements Poem {
 
     public void recite() {
         for(String str:LINES){
-
+            System.out.println(str);
         }
     }
 }

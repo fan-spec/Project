@@ -3,9 +3,38 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="duke" class="com.yhz.springlearn.bean.Juggler">
+    <bean id="poeticDuke" class="com.yhz.springlearn.bean.PoeticJuggler">
         <constructor-arg value="15"/>
+        <constructor-arg ref="sonnet29"/>
     </bean>
 
+    <bean id="sonnet29" class="com.yhz.springlearn.bean.Sonnet29"/>
+
+    <bean id="kenny" class="com.yhz.springlearn.bean.Instrumentalist">
+        <property name="song" value="Jingle Bells"/>
+        <property name="instrument">
+            <bean class="com.yhz.springlearn.bean.Saxophone"/>
+        </property>
+    </bean>
+
+    <bean id="saxophone" class="com.yhz.springlearn.bean.Saxophone"/>
+
+    <bean id="kenny2"
+        class="com.yhz.springlearn.bean.Instrumentalist">
+        <property name="song" value="Jingle Bells"/>
+        <property name="instrument" ref="piano"/>
+    </bean>
+
+    <bean id="piano" class="com.yhz.springlearn.bean.Piano"/>
+
+    <bean id="hank" class="com.yhz.springlearn.bean.OneManBand">
+        <property name="instruments">
+            <list>
+                <ref bean="guitar" />
+                <ref bean="cymbal" />
+                <ref bean="harmonica" />
+            </list>
+        </property>
+    </bean>
 
 </beans>
