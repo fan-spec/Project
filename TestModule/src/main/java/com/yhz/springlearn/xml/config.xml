@@ -27,14 +27,16 @@
 
     <bean id="piano" class="com.yhz.springlearn.bean.Piano"/>
 
-    <bean id="hank" class="com.yhz.springlearn.bean.OneManBand">
-        <property name="instruments">
-            <list>
-                <ref bean="guitar" />
-                <ref bean="cymbal" />
-                <ref bean="harmonica" />
-            </list>
-        </property>
-    </bean>
+    <!--<bean id="hank" class="com.yhz.springlearn.bean.OneManBand">-->
+        <!--<property name="instruments">-->
+            <!--<list>-->
+                <!--<ref bean="guitar" />-->
+                <!--<ref bean="cymbal" />-->
+                <!--<ref bean="harmonica" />-->
+            <!--</list>-->
+        <!--</property>-->
+    <!--</bean>-->
+
+    
 
 </beans>

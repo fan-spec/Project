@@ -2,23 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97f5e8c9-fef4-4551-8bbd-22cd7961033a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestModule/target/classes/com/yhz/springlearn/bean/Juggler.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestModule/target/classes/com/yhz/springlearn/bean/PoeticJuggler.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestModule/target/classes/com/yhz/springlearn/bean/Sonnet29.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestModule/target/classes/com/yhz/springlearn/interf/Performer.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestModule/target/classes/com/yhz/springlearn/interf/Poem.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestModule/src/main/java/com/yhz/springlearn/bean/Instrumentalist.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestModule/src/main/java/com/yhz/springlearn/bean/OneManBand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestModule/src/main/java/com/yhz/springlearn/bean/Piano.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestModule/src/main/java/com/yhz/springlearn/bean/Saxophone.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestModule/src/main/java/com/yhz/springlearn/interf/Instrument.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/TestModule/target/classes/com/yhz/springlearn/Juggler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/TestModule/target/classes/com/yhz/springlearn/Performer.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestModule/target/classes/com/yhz/test/Test.class" afterPath="$PROJECT_DIR$/TestModule/target/classes/com/yhz/test/Test.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestModule/src/main/java/com/yhz/springlearn/bean/Sonnet29.java" afterPath="$PROJECT_DIR$/TestModule/src/main/java/com/yhz/springlearn/bean/Sonnet29.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestModule/src/main/java/com/yhz/springlearn/xml/config.xml" afterPath="$PROJECT_DIR$/TestModule/src/main/java/com/yhz/springlearn/xml/config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestModule/src/main/java/com/yhz/test/Test.java" afterPath="$PROJECT_DIR$/TestModule/src/main/java/com/yhz/test/Test.java" />
     </list>
     <ignored path="FirstProject.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -116,8 +100,8 @@
       <file leaf-file-name="config.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TestModule/src/main/java/com/yhz/springlearn/xml/config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
+            <state relative-caret-position="270">
+              <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -910,12 +894,12 @@
       <workItem from="1460425914568" duration="6569000" />
       <workItem from="1460456898277" duration="689000" />
       <workItem from="1460972336896" duration="150000" />
-      <workItem from="1461036869924" duration="9357000" />
+      <workItem from="1461036869924" duration="10045000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16765000" />
+    <option name="totallyTimeSpent" value="17453000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="877" height="870" extended-state="0" />
@@ -1035,10 +1019,10 @@
         <state relative-caret-position="140">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
-            <element signature="e#255#256#0" expanded="true" />
-            <element signature="e#293#294#0" expanded="true" />
-            <element signature="e#322#323#0" expanded="true" />
-            <element signature="e#390#391#0" expanded="true" />
+            <element signature="e#255#256#0" expanded="false" />
+            <element signature="e#293#294#0" expanded="false" />
+            <element signature="e#322#323#0" expanded="false" />
+            <element signature="e#390#391#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1141,8 +1125,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TestModule/src/main/java/com/yhz/springlearn/xml/config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
+        <state relative-caret-position="270">
+          <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
           <folding />
         </state>
       </provider>
