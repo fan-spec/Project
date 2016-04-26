@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <context:component-scan base-package="com.yhz.springlearn">
+    </context:component-scan>
+
+    <bean id="poeticDuke" class="com.yhz.springlearn.bean.PoeticJuggler">
+        <constructor-arg value="15"/>
+        <constructor-arg ref="sonnet29"/>
+    </bean>
+
+    <bean id="sonnet29" class="com.yhz.springlearn.bean.Sonnet29"/>
+
+    <bean id="kenny" class="com.yhz.springlearn.bean.Instrumentalist">
+        <property name="song" value="Jingle Bells"/>
+        <property name="instrument">
+            <bean class="com.yhz.springlearn.bean.Saxophone"/>
+        </property>
+    </bean>
+
+    <bean id="saxophone" class="com.yhz.springlearn.bean.Saxophone"/>
+
+    <bean id="kenny2"
+          class="com.yhz.springlearn.bean.Instrumentalist">
+        <property name="song" value="Jingle Bells"/>
+        <property name="instrument" ref="piano"/>
+    </bean>
+
+    <bean id="piano" class="com.yhz.springlearn.bean.Piano"/>
+
+    <!--<bean id="hank" class="com.yhz.springlearn.bean.OneManBand">-->
+    <!--<property name="instruments">-->
+    <!--<list>-->
+    <!--<ref bean="guitar" />-->
+    <!--<ref bean="cymbal" />-->
+    <!--<ref bean="harmonica" />-->
+    <!--</list>-->
+    <!--</property>-->
+    <!--</bean>-->
+
+    <!-- AOP -->
+    <bean id="audience" class="com.yhz.springlearn.bean.Audience"/>
+    <bean id="magician" class="com.yhz.springlearn.bean.Magician"/>
+    <bean id="volunteer" class="com.yhz.springlearn.bean.Volunteer"/>
+
+    <aop:config>
+        <aop:aspect ref="audience">
+            <aop:pointcut id="performance" expression="execution(* com.yhz.springlearn.interf.Performer.perform(..))"/>
+
+            <aop:around
+                pointcut-ref="performance"
+                method="watchPerformance"/>
+
+
+        </aop:aspect>
+
+        <aop:aspect ref="magician">
+            <aop:pointcut id="thinking"
+                          expression="execution(* com.yhz.springlearn.interf.Thinker.thinkOfSomething(String))
+                            and args(thoughts)"/>
+
+            <aop:before
+                pointcut-ref="thinking"
+                method="interceptThoughts"
+                arg-names="thoughts" />
+
+
+        </aop:aspect>
+
+
+    </aop:config>
+
+
+</beans>
