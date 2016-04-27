@@ -64,12 +64,12 @@
         <aop:aspect ref="magician">
             <aop:pointcut id="thinking"
                           expression="execution(* com.yhz.springlearn.interf.Thinker.thinkOfSomething(String))
-                            and args(thought)"/>
+                            and args(thoughts)"/>
 
             <aop:before
                 pointcut-ref="thinking"
                 method="interceptThoughts"
-                arg-names="thought" />
+                arg-names="thoughts" />
 
 
         </aop:aspect>
